@@ -324,3 +324,44 @@ nav a:focus {
  padding: 1rem 2rem;
  font-size: 1.125rem;
 }
+/* Navigation Bar */
+header {
+ background-color: var(--color-bg-primary);
+ border-bottom: 1px solid var(--color-neutral-200);
+ padding: 1rem 0;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* Logo/Brand */
+.nav-brand {
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: var(--color-primary);
+}
+
+/* Navigation Links */
+.nav-links {
+ display: flex;
+ gap: 2rem;
+}
+
+.nav-links a {
+ color: var(--color-text-secondary);
+ font-weight: 500;
+ transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+ color: var(--color-primary);
+}
+
+/* Active link */
+.nav-links a.active {
+ color: var(--color-primary);
+ font-weight: 600;
+}
