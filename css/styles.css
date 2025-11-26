@@ -200,6 +200,39 @@ section:first-of-type {
 section:nth-child(even) {
     background-color: var(--color-bg-secondary);
 }
+/* Navigation links */
+nav a {
+    color: var(--color-text-secondary);
+    transition: color 150ms ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color-primary);
+}
+
+/* Logo */
+.logo h1 {
+    color: var(--color-primary);
+}
+
+/* CTA button */
+.cta-button {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 150ms ease, transform 120ms ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background: var(--color-primary-dark);
+    transform: translateY(-1px);
+}
+
 /* Card Component */
 .card {
  background-color: var(--color-bg-primary);
@@ -236,4 +269,58 @@ section:nth-child(even) {
  border-top: 1px solid var(--color-neutral-200);
  padding-top: 1rem;
  margin-top: 1rem;
+}
+/* Base Button Styles */
+.btn {
+ display: inline-block;
+ padding: 0.75rem 1.5rem;
+ font-size: 1rem;
+ font-weight: 500;
+ text-align: center;
+ border: none;
+ border-radius: 6px;
+ cursor: pointer;
+ transition: all 0.2s ease;
+ text-decoration: none;
+}
+
+/* Primary Button */
+.btn-primary {
+ background-color: var(--color-primary);
+ color: white;
+}
+
+.btn-primary:hover {
+ background-color: var(--color-primary-dark);
+ transform: translateY(-2px);
+ box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.btn-primary:active {
+ transform: translateY(0);
+ box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+/* Secondary Button (Outline) */
+.btn-secondary {
+ background-color: transparent;
+ color: var(--color-primary);
+ border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+ background-color: var(--color-primary);
+ color: white;
+}
+
+/* Small Button Size */
+.btn-sm {
+ padding: 0.5rem 1rem;
+ font-size: 0.875rem;
+}
+
+/* Large Button Size */
+.btn-lg {
+ padding: 1rem 2rem;
+ font-size: 1.125rem;
 }
